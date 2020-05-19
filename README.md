@@ -4,4 +4,7 @@ Conflict-Based Search with Optimal Task Assignment - Wolfgang Honig and Scott Ki
 
 This contains the code and results in the form of a video and report for multi-agent path planning and optimal task assignment. It was submitted as a project for a class at the Carnegie Mellon University.
 
-![(Demonstration_Video.mp4)]
+
+<video width="320" height="240" controls>
+  <source src="Demonstration_Video.mp4" type="video/mp4">
+</video>
