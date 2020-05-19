@@ -1,0 +1,22 @@
+Run the following in MATLAB with a C++ compiler.
+
+To run the 'independent' pickup and delivery code:
+
+1. Open the code/independent folder
+2. Run >> mex planner_unlinked.cpp param.cpp lowlevel.cpp
+3. Run >> runtest_full('map_7x5_3agents.txt')
+4. Run the planner as above using any of the other maps available in the folder.
+
+To run the 'coupled' pickup and delivery code:
+
+1. Open the code/coupled folder
+2. Run >> mex planner_oneshot.cpp param.cpp lowlevel.cpp
+3. Run >> runtest_full('map_7x5_5agents.txt')
+4. Run the planner as above using any of the other maps available in the folder.
+
+To run either of the 'independent' or 'coupled' planners with a randomly generated map:
+
+1. Run >> makemap(x_dimension_of_map, y_dimension_of_map, num_of_agents, obstacle_density)
+2. Example : makemap(20,20,5,0.1) generates a 20x20 map with 5 agents with random start, pickup and delivery points with 10% obstacle density.
+3. The randomly generated map gets stored in 'newmap.txt'
+4. Run >> runtest_full('newmap.txt')
